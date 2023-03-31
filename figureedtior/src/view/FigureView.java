@@ -63,8 +63,8 @@ public class FigureView implements View
 		controller.editCaption();
 	    }
 	});
+		controller.getModel().addPropertyChangeListener(event -> this.update(controller.getModel()));
     }
-
     public void update(FigureModel model) {
 	if (model.getImage() != null) {
 	    this.imageView.setIcon(model.getImage());

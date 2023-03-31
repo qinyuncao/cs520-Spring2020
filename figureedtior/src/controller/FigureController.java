@@ -36,6 +36,9 @@ public class FigureController
 	    currentView.update(this.model);
 	}
     }
+	public FigureModel getModel(){
+		return this.model;
+	}
 
     public void changeImage() {
 	JFileChooser fileChooser = new JFileChooser();
